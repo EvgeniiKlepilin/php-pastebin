@@ -1,0 +1,3 @@
+<?php
+//Model.php file
+?>
