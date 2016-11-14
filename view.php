@@ -27,7 +27,7 @@ class pastebinView{
             <body>
               <h1 style='text-align:center'>Notes</h1>" . $this.showNotes() .
             "<hr>
-            <form action=<?php echo htmlentities($_SERVER['PHP_SELF']?> method=post>
+            <form action=" . htmlentities($_SERVER['PHP_SELF']) . " method=post>
               <input type='submit' />
             </form>
             Note:<textarea id='noteArea' rows='6' cols='75' />
