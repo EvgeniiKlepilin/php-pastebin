@@ -10,8 +10,13 @@ class pastebinView{
   }
   
   public function showNotes(){
-    foreach($this->model->savedNotes as $note){
-      echo "<p>" . $note . "</p>";
+    if(!empty($this->model->savedNotes)){
+      foreach($this->model->savedNotes as $note){
+        echo "<p>" . $note . "</p>";
+      }
+    } else {
+      echo "No notes so far...\n";
+    }
   }
     
   public function generateHTML(){
