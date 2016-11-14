@@ -3,6 +3,8 @@
 class pasteBinModel{
   public $savedNotes = array();
   
+  public function __construct() {}
+  
   public function updateNotes($conn){
     //select all notes from db
     $sql = $conn->query("SELECT note FROM pastebin");
