@@ -12,6 +12,8 @@ class pasteBinControl{
     $sql = $conn->prepare("INSERT INTO pastebin (note) VALUES (:newNote)";
     $sql->bindParam(:newNote, $newNote);
     $sql->execute();
+    //update pastebin local array
+    $this->model.updateNotes($connection);
   }
 }
 ?>
