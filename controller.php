@@ -13,7 +13,7 @@ class pasteBinControl{
     $sql->bindParam(':newNote', $newNote);
     $sql->execute();
     //update pastebin local array
-    $this->model->updateNotes($connection);
+    $this->model->updateNotes($conn);
   }
 }
 ?>
