@@ -1,5 +1,9 @@
 <?php
 //index.php
+require_once('connect.php');
+require_once('model.php');
+require_once('view.php');
+require_once('controller.php');
 
 //Creation and initialization of objects
 //initialize database connection
