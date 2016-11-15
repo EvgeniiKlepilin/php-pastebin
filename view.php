@@ -25,7 +25,7 @@ class pastebinView{
               <title>PasteBin Clone</title>
             </head>
             <body>
-              <h1 style='text-align:center'>Notes</h1>" . $this.showNotes() .
+              <h1 style='text-align:center'>Notes</h1>" . $this->showNotes() .
             "<hr>
             <form action=" . htmlentities($_SERVER['PHP_SELF']) . " method=post>
               <input type='submit' />
