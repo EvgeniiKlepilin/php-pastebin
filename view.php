@@ -30,7 +30,7 @@ class pastebinView{
             <form action=" . htmlentities($_SERVER['PHP_SELF']) . " method=post>
               <input type='submit' />
             </form>
-            Note:<textarea id='noteArea' rows='6' cols='75' />
+            Note:<textarea id='noteArea' rows='6' cols='75'></textarea>
             <hr>
             </body>
             </html>";
